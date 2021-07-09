@@ -18,14 +18,18 @@ public class CoffeeMachine {
         switch (action) {
             case "buy":
                 buy();
+                scanner.close();
                 break;
             case "fill":
                 fill();
+                scanner.close();
                 break;
             case "take":
                 take();
+                scanner.close();
                 break;
             default:
+                scanner.close();
                 break;
         }
         printStatus();
