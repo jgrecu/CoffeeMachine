@@ -12,7 +12,7 @@ public class CoffeeMachine {
 
     public static void main(String[] args) {
 
-        printMenu();
+        printStatus();
         System.out.println("Write action (buy, fill, take): ");
         String action = scanner.nextLine();
         switch (action) {
@@ -28,7 +28,7 @@ public class CoffeeMachine {
             default:
                 break;
         }
-        printMenu();
+        printStatus();
 
     }
 
@@ -52,7 +52,7 @@ public class CoffeeMachine {
     }
 
 
-    public static void printMenu() {
+    public static void printStatus() {
         System.out.println("The coffee machine has:\n" +
                 waterSupply + " ml of water\n" +
                 milkSupply + " ml of milk\n" +
